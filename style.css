@@ -90,3 +90,26 @@ footer img {
 .bounded{
   width: 380px;
 }
+
+.button {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  color: black;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: Optima;
+  font-size: 12pt;
+}
+
+.boxabstract {
+  width: 100%;
+  padding: 5px 5px;
+  text-align: justify;
+  background-color: Gainsboro;
+  margin-top: 10px;
+}

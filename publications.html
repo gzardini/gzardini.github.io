@@ -11,6 +11,24 @@
 		<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
 		<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 
+		<!-- Abstract and bibtex -->
+        <script>
+        function myFunction(name) {
+          var x = document.getElementById(name);
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function redirect_blank(url) {
+          var a = document.createElement('a');
+          a.target = "_blank";
+          a.href = url;
+          a.click();
+        }
+        </script>
+
 	</head>
 
 	<header>
@@ -54,10 +72,86 @@
 
 		<p>
 			<ol start="1">
-			<li><b>G. Zardini</b>, D. Milojevic, A. Censi, E. Frazzoli, <em><a href="https://arxiv.org/abs/2011.10756" target="_blank">A Formal Approach to the Co-Design of Embodied Intelligence</a></em>. IEEE International Conference on Robotics and Automation (submitted), 2021. <a href="https://arxiv.org/pdf/2011.10756.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a>
-			<li><b>G. Zardini</b>, A. Censi, E. Frazzoli, <em><a href="https://arxiv.org/abs/2011.10758" target="_blank">Co-Design of Autonomous Systems: From Hardware Selection to Control Synthesis</a></em>. European Control Conference (submitted), 2021. <a href="https://arxiv.org/pdf/2011.10758.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a>
-			<li><b>G. Zardini</b>, N. Lanzetti, A. Censi, E. Frazzoli, and M. Pavone, <em><a href="https://arxiv.org/pdf/2008.08975" target="_blank">Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions</a></em>. IEEE Transactions on Intelligent Transportation Systems (submitted), 2020. <a href="https://arxiv.org/pdf/2008.08975.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a> <a href="https://youtube.com/watch/Yl50qilcMJE" class="nohover-icons"><img src="icons/youtube.svg" style="width:2.5%"></a> <a href="media/T_ITS_Zardini.pdf" class="nohover-icons"><img src="icons/presentation.svg" style="width:2.4%"></a>
-			<li><b>G. Zardini</b>, D. I. Spivak, A. Censi, and E. Frazzoli, <em><a href="https://arxiv.org/abs/2005.04715" target="_blank">A Compositional Sheaf-Theoretic Framework for Event-Based Systems (extended version)</a></em>, 2020. <a href="https://arxiv.org/pdf/2005.04715.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a> <a href="https://www.youtube.com/watch?v=bIFGXS-Gr1c&list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI" class="nohover-icons"><img src="icons/youtube.svg" style="width:2.5%"></a> <a href="ACT_Presentation_online.pdf" class="nohover-icons"><img src="icons/presentation.svg" style="width:2.4%"></a>
+
+			<li style="margin:10px 0px"><b>G. Zardini</b>, D. Milojevic, A. Censi, E. Frazzoli <br>
+				<em><a href="https://arxiv.org/abs/2011.10756" target="_blank">A Formal Approach to the Co-Design of Embodied Intelligence</a></em><br>
+				IEEE International Conference on Robotics and Automation (submitted), 2021 <br>
+				<button class="button" onclick="myFunction('ZardiniMi2021')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/2011.10756.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+				<button class="button" onclick="myFunction('ZardiniICRA21BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniMi2021" style="Display:none">
+					We consider the problem of formally co-designing embodied intelligence as a whole, from hardware components such as chassis and sensors
+					to software modules such as control and perception pipelines. We propose a principled approach to formulate and solve complex embodied
+					intelligence co- design problems, leveraging a monotone co-design theory. The methods we propose are intuitive and integrate
+					heterogeneous engineering disciplines, allowing analytical and simulation- based modeling techniques and enabling interdisciplinarity.
+					We illustrate through a case study how, given a set of desired behaviors, our framework is able to compute Pareto efficient solutions
+					for the entire hardware and software stack of a self- driving vehicle.
+        		</div>
+				<div class="boxabstract" id="ZardiniICRA21BIB" style="Display:none">
+					@article{zardini2020formal,<br>
+					  title={A Formal Approach to the Co-Design of Embodied Intelligence},<br>
+					  author={Zardini, Gioele and Milojevic, Dejan and Censi, Andrea and Frazzoli, Emilio},<br>
+					  journal={arXiv preprint arXiv:2011.10756},<br>
+					  year={2020}<br>
+					}
+        		</div>
+
+
+			<li style="margin:10px 0px"><b>G. Zardini</b>, A. Censi, E. Frazzoli <br>
+				<em><a href="https://arxiv.org/abs/2011.10758" target="_blank">Co-Design of Autonomous Systems: From Hardware Selection to Control Synthesis</a></em><br>
+				European Control Conference (submitted), 2021 <br>
+				<button class="button" onclick="myFunction('ZardiniECC2021')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/2011.10758.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+				<button class="button" onclick="myFunction('ZardiniECC21BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniECC2021" style="Display:none">
+					Designing cyber-physical systems is a complex task which requires insights at multiple abstraction levels. The choices of single
+					components are deeply interconnected and need to be jointly studied. In this work, we consider the problem of co-designing the
+					control algorithm as well as the platform around it. In particular, we leverage a monotone theory of co- design to formalize
+					variations of the LQG control problem as monotone feasibility relations. We then show how this enables the embedding of control
+					co-design problems in the higher level co-design problem of a robotic platform. We illustrate the properties of our formalization
+					by analyzing the co-design of an autonomous drone performing search-and-rescue tasks and show how, given a set of desired robot
+					behaviors, we can compute Pareto efficient design solutions.
+        		</div>
+				<div class="boxabstract" id="ZardiniECC21BIB" style="Display:none">
+					@article{zardini2020co,<br>
+					  title={Co-Design of Autonomous Systems: From Hardware Selection to Control Synthesis},<br>
+					  author={Zardini, Gioele and Censi, Andrea and Frazzoli, Emilio},<br>
+					  journal={arXiv preprint arXiv:2011.10758},<br>
+					  year={2020}<br>
+					}
+        		</div>
+
+			<li style="margin:10px 0px"><b>G. Zardini</b>, N. Lanzetti, A. Censi, E. Frazzoli, M. Pavone <br>
+				 <em><a href="https://arxiv.org/pdf/2008.08975" target="_blank">Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions</a></em><br>
+				IEEE Transactions on Intelligent Transportation Systems (submitted), 2020 <br>
+				<button class="button" onclick="myFunction('ZardiniTITS2020')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/2008.08975.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+				<button class="button" onclick="redirect_blank('https://youtube.com/watch/Yl50qilcMJE')"><i class="fa fa-youtube-play"></i> Talk</button>
+				<button class="button" onclick="redirect_blank('media/T_ITS_Zardini.pdf')"><i class="fa fa-picture-o"></i> Slides</button>
+				<button class="button" onclick="myFunction('ZardiniTITS20BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniTITS2020" style="Display:none">
+					The design of future mobility solutions (autonomous vehicles, micromobility solutions, etc.) and the design of the mobility systems they enable
+					are closely coupled. Indeed, knowledge about the intended service of novel mobility solutions would impact their design and deployment process,
+					whilst insights about their technological development could significantly affect transportation management policies. This requires tools to study
+					such a coupling and co-design future mobility systems in terms of different objectives. This paper presents a framework to address such co-design
+					problems. In particular, we leverage the recently developed mathematical theory of co-design to frame and solve the problem of designing and
+					deploying an intermodal mobility system, whereby autonomous vehicles service travel demands jointly with micromobility solutions such as shared
+					bikes and e- scooters, and public transit, in terms of fleets sizing, vehicle char- acteristics, and public transit service frequency.
+					Our framework is modular and compositional, allowing one to describe the design problem as the interconnection of its individual components and
+					to tackle it from a system-level perspective. Moreover, it only requires very general monotonicity assumptions and it naturally handles multiple
+					objectives, delivering the rational solutions on the Pareto front and thus enabling policy makers to select a policy. To showcase our methodology,
+					we present a real- world case study for Washington D.C., USA. Our work suggests that it is possible to create user-friendly optimization tools
+					to systematically assess the costs and benefits of interventions, and that such analytical techniques might inform policy-making in the future.
+        		</div>
+				<div class="boxabstract" id="ZardiniTITS20BIB" style="Display:none">
+					@article{zardini2020camod,<br>
+					  title={Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions},<br>
+					  author={Zardini, Gioele and Lanzetti, Nicolas and Censi, Andrea and Frazzoli, Emilio and Pavone, Marco},<br>
+					  journal={arXiv preprint arXiv:2008.08975},<br>
+					  year={2020}<br>
+					}
+        		</div>
+
 		</ol>
 		</p>
 
@@ -81,14 +175,107 @@
 
 		<p>
 			<ol start="1">
-				<li><b>G. Zardini</b>, N. Lanzetti, M. Salazar, A. Censi, E. Frazzoli, and M. Pavone, <em><a href="http://arxiv.org/abs/2003.04739" target="_blank">On the Co-Design of AV-Enabled Mobility Systems</a></em>. IEEE 23rd International Conference on Intelligent Transportation Systems Conference (ITSC), 2020, Rhodes (Greece). <a href="https://arxiv.org/pdf/2003.04739.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a> <a href="https://youtu.be/6tCJB7CHp74" class="nohover-icons"><img src="icons/youtube.svg" style="width:2.5%"></a> <a href="media/ITSC20_Zardini.pdf" class="nohover-icons"><img src="icons/presentation.svg" style="width:2.4%"></a>
-
-				<li><b>G. Zardini</b>, D. I. Spivak, A. Censi, and E. Frazzoli, <em>A Compositional Sheaf-Theoretic Framework for Event-Based Systems</em>. 3rd Annual International Applied Category Theory Conference, 2020, Cambridge (USA). <a href="https://www.youtube.com/watch?v=bIFGXS-Gr1c&list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI" class="nohover-icons"><img src="icons/youtube.svg" style="width:2.5%"></a> <a href="ACT_Presentation_online.pdf" class="nohover-icons"><img src="icons/presentation.svg" style="width:2.4%"></a>
-
-				<li><b>G. Zardini</b>, N. Lanzetti, M. Salazar, A. Censi, E. Frazzoli, and M. Pavone, <em><a href="https://arxiv.org/abs/1910.07714" target="_blank">Towards a Co-Design Framework for Future Mobility Systems</a></em>. 99th Annual Meeting of the Transportation Research Board, 2020, Washington D.C (USA). <a href="https://arxiv.org/pdf/1910.07714.pdf" class="nohover-icons"><img src="icons/pdf.svg" style="width:2.7%"></a> <a href="media/poster.pdf" class="nohover-icons"><img src="icons/presentation.svg" style="width:2.5%"></a>
-
-				<li> N. Lanzetti, <b>G. Zardini</b>, M. Schiffer, M. Ostrovsky, and M. Pavone, <em><a href="https://www.research-collection.ethz.ch/handle/20.500.11850/375834" target="_blank">Do Self-driving Cars Swallow Public Transport? A Game-theoretical Perspective on Transportation Systems</a></em>. INFORMS Annual Meeting, 2019, Seattle (USA).
-
+			<li style="margin:10px 0px"><b>G. Zardini</b>, N. Lanzetti, M. Salazar, A. Censi, E. Frazzoli, M. Pavone<br>
+				 <em><a href="http://arxiv.org/abs/2003.04739" target="_blank">On the Co-Design of AV-Enabled Mobility Systems</a></em><br>
+				IEEE 23rd International Conference on Intelligent Transportation Systems Conference (ITSC), 2020, Rhodes (Greece) <br>
+				<button class="button" onclick="myFunction('ZardiniITSC2020')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/2003.04739.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+				<button class="button" onclick="redirect_blank('https://youtu.be/6tCJB7CHp74')"><i class="fa fa-youtube-play"></i> Talk</button>
+				<button class="button" onclick="redirect_blank('media/ITSC20_Zardini.pdf')"><i class="fa fa-picture-o"></i> Slides</button>
+				<button class="button" onclick="myFunction('ZardiniITSC2020BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniITSC2020" style="Display:none">
+					The design of autonomous vehicles (AVs) and the design of AV-enabled mobility systems are closely coupled. Indeed, knowledge
+					about the intended service of AVs would impact their design and deployment process, whilst insights about their technological
+					development could significantly affect transportation management decisions. This calls for tools to study such a coupling and
+					co-design AVs and AV-enabled mobility systems in terms of different objectives. In this paper, we instantiate a framework to
+					address such co-design problems. In particular, we leverage the recently developed theory of co-design to frame and solve the
+					problem of designing and deploying an intermodal Autonomous Mobility-on-Demand system, whereby AVs service travel demands
+					jointly with public transit, in terms of fleet sizing, vehicle autonomy, and public transit service frequency.
+					Our framework is modular and compositional, allowing one to describe the design problem as the interconnection of its
+					individual components and to tackle it from a system-level perspective. To showcase our methodology, we present a
+					real-world case study for Washington D.C., USA. Our work suggests that it is possible to create user-friendly optimization
+					tools to systematically assess costs and benefits of interventions, and that such analytical techniques might gain a momentous
+					role in policy-making in the future.
+        		</div>
+			<div class="boxabstract" id="ZardiniITSC2020BIB" style="Display:none">
+					@inproceedings{ZardiniEtAl2020,<br>
+					author = {Zardini, G. and Lanzetti, N. and Salazar, M. and Censi, A. and Frazzoli, E. and Pavone, M.},<br>
+				  title = {On the Co-Design of AV-Enabled Mobility Systems},<br>
+				  booktitle = {Proc. IEEE Int. Conf. on Intelligent Transportation Systems},<br>
+				  year = {2020},<br>
+				  address = {Rhodes, Greece},<br>
+				  month = sep<br>
+				}
+        		</div>
+			<li style="margin:10px 0px"><b>G. Zardini</b>, D. I. Spivak, A. Censi, E. Frazzoli<br>
+				 <em><a href="https://cgi.cse.unsw.edu.au/~eptcs/paper.cgi?ACT2020:38" target="_blank">A Compositional Sheaf-Theoretic Framework for Event-Based Systems</a></em><br>
+				3rd Annual International Applied Category Theory Conference, 2020, Cambridge (USA) <br>
+				<button class="button" onclick="myFunction('ZardiniACT20')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://cgi.cse.unsw.edu.au/~eptcs/paper.cgi?ACT2020:38.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+			<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/2005.04715.pdf')"><i class="fa fa-file-pdf-o"></i> Extended Version</button>
+				<button class="button" onclick="redirect_blank('https://www.youtube.com/watch?v=bIFGXS-Gr1c&list=PLCOXjXDLt3pYot9VNdLlZqGajHyZUywdI')"><i class="fa fa-youtube-play"></i> Talk</button>
+				<button class="button" onclick="redirect_blank('ACT_Presentation_online.pdf')"><i class="fa fa-picture-o"></i> Slides</button>
+			<button class="button" onclick="myFunction('ZardiniATC20BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniACT20" style="Display:none">
+					A compositional sheaf-theoretic framework for the modeling of complex event-based systems is presented.
+					We show that event-based systems are machines, with inputs and outputs, and that they can be composed with machines
+					of different types, all within a unified, sheaf-theoretic formalism. We take robotic systems as an exemplar of complex systems
+					and rigorously describe actuators, sensors, and algorithms using this framework.
+        		</div>
+			<div class="boxabstract" id="ZardiniATC20BIB" style="Display:none">
+					@inproceedings{zardini2020compositional,<br>
+  						title={A Compositional Sheaf-Theoretic Framework for Event-Based Systems},<br>
+  						author={Zardini, Gioele and Spivak, David I and Censi, Andrea and Frazzoli, Emilio},<br>
+						booktitle={3rd Annual International Applied Category Theory Conference (ACT 2020)},<br>
+  						year={2020}<br>
+						}
+        		</div>
+			<li style="margin:10px 0px"><b>G. Zardini</b>, N. Lanzetti, M. Salazar, A. Censi, E. Frazzoli, M. Pavone<br>
+				 <em><a href="https://arxiv.org/abs/1910.07714" target="_blank">Towards a Co-Design Framework for Future Mobility Systems</a></em><br>
+				99th Annual Meeting of the Transportation Research Board, 2020, Washington D.C (USA) <br>
+				<button class="button" onclick="myFunction('ZardiniTRB20')"><i class="fa fa-align-left"></i> Abstract</button>
+				<button class="button" onclick="redirect_blank('https://arxiv.org/pdf/1910.07714.pdf')"><i class="fa fa-file-pdf-o"></i> Paper</button>
+				<button class="button" onclick="redirect_blank('media/poster.pdf')"><i class="fa fa-picture-o"></i> Poster</button>
+				<button class="button" onclick="myFunction('ZardiniTRB20BIB')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="ZardiniTRB20" style="Display:none">
+					The design of Autonomous Vehicles (AVs) and the design of AVs-enabled mobility systems are closely coupled.
+					Indeed, knowledge about the intended service of AVs would impact their design and deployment process, whilst insights
+					about their technological development could significantly affect transportation management decisions. This calls for tools
+					to study such a coupling and co-design AVs and AVs-enabled mobility systems in terms of different objectives. In this paper,
+					we instantiate a framework to address such co-design problems. In particular, we leverage the recently developed theory of
+					co-design to frame and solve the problem of designing and deploying an intermodal Autonomous Mobility-on-Demand system, whereby
+					AVs service travel demands jointly with public transit, in terms of fleet sizing, vehicle autonomy, and public transit service
+					frequency. Our framework is modular and compositional, allowing to describe the design problem as the interconnection of its
+					individual components and to tackle it from a system-level perspective. Moreover, it only requires very general monotonicity
+					assumptions and it naturally handles multiple objectives, delivering the rational solutions on the Pareto front and thus enabling
+					policy makers to select a solution through “political” criteria. To showcase our methodology, we present a real- world case study
+					for Washington D.C., USA. Our work suggests that it is possible to create user- friendly optimization tools to systematically
+					assess the costs and benefits of interventions, and that such analytical techniques might gain a momentous role in policy-making
+					in the future.
+        		</div>
+			<div class="boxabstract" id="ZardiniTRB20BIB" style="Display:none">
+					@inproceedings{zardini2020towards,<br>
+					  author = {Zardini, G. and Lanzetti, N. and Salazar, M. and Censi, A. and Frazzoli, E. and Pavone, M.},<br>
+					  title = {Towards a Co-Design Framework for Future Mobility Systems},<br>
+					  booktitle = {99th Annual Meeting of the Transportation Research Board},<br>
+					  year = {2020},<br>
+					  address = {Washington D.C., United States},<br>
+					  month = jan<br>
+						}
+        		</div>
+			<li style="margin:10px 0px">N. Lanzetti, <b>G. Zardini</b>, M. Schiffer, M. Ostrovsky, M. Pavone<br>
+				 <em><a href="https://www.research-collection.ethz.ch/handle/20.500.11850/375834" target="_blank">Do Self-driving Cars Swallow Public Transport? A Game-theoretical Perspective on Transportation Systems</a></em><br>
+				INFORMS Annual Meeting, 2019, Seattle (USA) <br>
+				<button class="button" onclick="redirect_blank('http://people.ee.ethz.ch/~lnicolas/files/conferences/informs2019/AMODPresentation.pdf')"><i class="fa fa-picture-o"></i> Slides</button>
+				<button class="button" onclick="myFunction('LanzettiInforms20')"><i class="fa fa-quote-right"></i> BibTex</button>
+				<div class="boxabstract" id="LanzettiInforms20" style="Display:none">
+					@inproceedings{lanzetti2019self,<br>
+					  title={Do Self-driving Cars Swallow Public Transport? A Game-theoretical Perspective on Transportation Systems},<br>
+					  author={Lanzetti, Nicolas and Zardini, Gioele and Schiffer, Maximilian and Ostrovsky, Michael and Pavone, Marco},<br>
+					  booktitle={INFORMS Annual Meeting 2019},<br>
+					  year={2019}<br>
+					}
+        		</div>
 			</ol>
 
 		<p>
@@ -96,11 +283,20 @@
 		</p>
 
 			<ol start="1">
-				<li><b>G. Zardini</b>, A. Censi, E. Frazzoli, and M. Pavone, <em>A Co-Design Framework for Future Mobility Systems</em>, Master's Thesis, Stanford University, 2019. Advisor: Prof. Marco Pavone, <a href="http://asl.stanford.edu" target="_blank">Autonomous Systems Lab</a>.
+				<li style="margin:10px 0px"><b>G. Zardini</b> <br>
+					<em>A Co-Design Framework for Future Mobility Systems</em> <br>
+					Master's Thesis, <a href="http://asl.stanford.edu" target="_blank">Autonomous Systems Lab</a>, Stanford University, 2019<br>
+					Advisors: Dr. Andrea Censi, Prof. Emilio Frazzoli, Prof. Marco Pavone
 
-				<li><b>G. Zardini</b>, J.Tani, and E. Frazzoli, <em>Towards Task-Driven Closed-Loop Auto-Tuning of Dynamic Vision Sensors</em>, Semester's Thesis, ETH Zurich, 2018. Advisor: Prof. Emilio Frazzoli, <a href="https://idsc.ethz.ch/research-frazzoli.html" target="_blank">Institute for Dynamic Systems and Control</a>.
+				<li style="margin:10px 0px"><b>G. Zardini</b> <br>
+				<em>Towards Task-Driven Closed-Loop Auto-Tuning of Dynamic Vision Sensors</em><br>
+				Semester's Thesis, <a href="https://idsc.ethz.ch/research-frazzoli.html" target="_blank">Institute for Dynamic Systems and Control</a>, ETH Zurich, 2018<br>
+				Advisors: Dr. Jacopo Tani, Prof. Emilio Frazzoli,
 
-				<li><b>G. Zardini</b>, G. Chatzipirpiridis, and B. Nelson, <em>An Inductance-Based Sensor for Haptic Feedback Control</em>, Bachelor's Thesis, ETH Zurich, 2017. Advisor: Prof. Bradley Nelson, <a href="https://msrl.ethz.ch" target="_blank">Multi-Scale Robotics Lab</a>.
+				<li style="margin:10px 0px"><b>G. Zardini</b> <br>
+				<em>An Inductance-Based Sensor for Haptic Feedback Control</em><br>
+				Bachelor's Thesis, <a href="https://msrl.ethz.ch" target="_blank">Multi-Scale Robotics Lab</a>, ETH Zurich, 2017<br>
+				Advisors: Dr. Georgios Chatzipirpiridis, Prof. Bradley Nelson
 
 			</ol>
 
@@ -109,7 +305,9 @@
 		</p>
 
 			<ol start="1">
-				<li>T. Bonanni, <b>G. Zardini</b>, and F. Seccamonte (equal contribution), <em>System and Method for Updating Map Data</em>, USA, 2020.
+				<li style="margin:10px 0px"> T. Bonanni, <b>G. Zardini</b>, and F. Seccamonte (equal contribution)<br>
+					<em>System and Method for Updating Map Data</em><br>
+					USA, 2020.
 			</ol>
 
 	    <p>
